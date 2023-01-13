@@ -1,0 +1,8 @@
+/*
+this is so tailwind can be picked up
+it can't live in a scss file
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

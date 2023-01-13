@@ -1,5 +1,5 @@
 import nipplejs from "nipplejs";
-import styles from "./virtual-gamepad-controls.css";
+import styles from "./virtual-gamepad-controls.scss";
 
 function insertAfter(el, referenceEl) {
   referenceEl.parentNode.insertBefore(el, referenceEl.nextSibling);
