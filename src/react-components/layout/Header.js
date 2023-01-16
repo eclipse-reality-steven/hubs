@@ -42,7 +42,7 @@ export function Header({
             </li>
             {enableSpoke && (
               <li>
-                <a className="text-cyan-200" href="/spoke">
+                <a href="/spoke">
                   {isHmc ? <FormattedMessage id="header.spoke" defaultMessage="Spoke" /> : editorName}
                 </a>
               </li>

@@ -438,10 +438,6 @@ module.exports = async (env, argv) => {
             }
           }
         },
-        {
-          test: /\.css$/i,
-          use: ["style-loader", "css-loader", "postcss-loader"]
-        },
         // On legacy browsers we want to show a "unsupported browser" page. That page needs to run on older browsers so w set the targeet to ie11.
         // Note: We do not actually include any polyfills so the code in these files just needs to be written with bare minimum browser APIs
         {
