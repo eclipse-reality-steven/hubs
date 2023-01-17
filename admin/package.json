@@ -11,7 +11,7 @@
   "scripts": {
     "start": "webpack serve --mode=development --env hubsCloudDev=1",
     "dev": "webpack serve --mode=development --env dev=1",
-    "local": "webpack serve --mode=development --env local=1",
+    "local": "webpack serve --mode=development --env local=1 --https --server-options-cert certs/cert.pem --server-options-key certs/key.pem",
     "build": "rimraf ./dist && webpack --mode=production",
     "prettier": "prettier --write '*.js' 'src/**/*.js'",
     "lint:js": "eslint '*.js' 'src/**/*.js'",
