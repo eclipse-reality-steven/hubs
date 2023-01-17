@@ -95,6 +95,7 @@ function tryGetTheme(themeId) {
     return theme;
   } else {
     const darkMode = getDarkModeQuery().matches;
+
     return (darkMode && themes.find(t => t.darkModeDefault)) || getDefaultTheme();
   }
 }

@@ -20,7 +20,7 @@ function createHTTPSConfig() {
       [
         {
           name: "commonName",
-          value: "52.22.35.245"
+          value: "shadow.eclipsereality.com"
         }
       ],
       {
@@ -32,11 +32,11 @@ function createHTTPSConfig() {
             altNames: [
               {
                 type: 2,
-                value: "52.22.35.245"
+                value: "shadow.eclipsereality.com"
               },
               {
                 type: 2,
-                value: "52.22.35.245"
+                value: "shadow.eclipsereality.com"
               }
             ]
           }
@@ -72,21 +72,21 @@ module.exports = (env, argv) => {
 
   if (env.local) {
     Object.assign(process.env, {
-      HOST: "52.22.35.245",
-      RETICULUM_SOCKET_SERVER: "52.22.35.245",
-      CORS_PROXY_SERVER: "52.22.35.245:4000",
-      NON_CORS_PROXY_DOMAINS: "52.22.35.245,dev.reticulum.io",
-      BASE_ASSETS_PATH: "https://52.22.35.245:8989/",
-      RETICULUM_SERVER: "52.22.35.245:4000",
+      HOST: "shadow.eclipsereality.com",
+      RETICULUM_SOCKET_SERVER: "shadow.eclipsereality.com",
+      CORS_PROXY_SERVER: "shadow.eclipsereality.com:4000",
+      NON_CORS_PROXY_DOMAINS: "shadow.eclipsereality.com,dev.reticulum.io",
+      BASE_ASSETS_PATH: "https://shadow.eclipsereality.com:8989/",
+      RETICULUM_SERVER: "shadow.eclipsereality.com:4000",
       POSTGREST_SERVER: "",
       ITA_SERVER: ""
     });
   }
 
-  const defaultHostName = "52.22.35.245";
+  const defaultHostName = "shadow.eclipsereality.com";
   const host = process.env.HOST_IP || defaultHostName;
 
-  const internalHostname = process.env.INTERNAL_HOSTNAME || "52.22.35.245";
+  const internalHostname = process.env.INTERNAL_HOSTNAME || "shadow.eclipsereality.com";
   return {
     cache: {
       type: "filesystem"
