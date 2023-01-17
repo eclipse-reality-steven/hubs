@@ -347,7 +347,7 @@ module.exports = async (env, argv) => {
       },
       server: {
         type: "https",
-        options: createHTTPSConfig(),
+        options: createHTTPSConfig()
       },
       host: "0.0.0.0",
       port: 8080,

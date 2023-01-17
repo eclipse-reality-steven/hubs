@@ -1,13 +1,16 @@
 @use "../../react-components/styles/theme.scss";
-@import 'shared';
+@import "shared";
 
 * {
   box-sizing: border-box;
 }
 
-html, body, #ui-root, .home-root {
+html,
+body,
+#ui-root,
+.home-root {
   margin: 0;
-  height:100%;
+  height: 100%;
 }
 
 body {
@@ -16,8 +19,9 @@ body {
   color: theme.$text1-color;
 }
 
-#ui-root, .home-root {
-  display: flex; 
+#ui-root,
+.home-root {
+  display: flex;
   flex-direction: column;
 }
 
