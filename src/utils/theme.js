@@ -164,7 +164,7 @@ waitForDOMContentLoaded().then(() => {
     // so don't bother doing anything UI related.
     return;
   }
-
+  console.log(configs.APP_CONFIG, 'app config in theme.js' );
   if (configs.APP_CONFIG && configs.APP_CONFIG.theme && configs.APP_CONFIG.theme["dark-theme"]) {
     document.body.classList.add("dark-theme");
   } else {

@@ -74,7 +74,7 @@ module.exports = (env, argv) => {
     Object.assign(process.env, {
       HOST: "shadow.eclipsereality.com",
       RETICULUM_SOCKET_SERVER: "shadow.eclipsereality.com",
-      CORS_PROXY_SERVER: "shadow.eclipsereality.com:4000",
+      CORS_PROXY_SERVER: "shadow.eclipsereality.com:3300",
       NON_CORS_PROXY_DOMAINS: "shadow.eclipsereality.com,dev.reticulum.io",
       BASE_ASSETS_PATH: "https://shadow.eclipsereality.com:8989/",
       RETICULUM_SERVER: "shadow.eclipsereality.com:4000",

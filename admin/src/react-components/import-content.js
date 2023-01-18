@@ -214,11 +214,12 @@ class ImportContentComponent extends Component {
 
       try {
         res = await fetchReticulumAuthenticated(`/api/v1/${type}`, "POST", { url: importUrl });
+        console.log("res", res);
       } catch (e) {
         this.setImportResult(url, RESULTS.failed);
         continue;
       }
-
+      console.log("Response", res)
       const asset = res[type][0];
       const tags = [];
 
